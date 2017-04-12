@@ -6,7 +6,7 @@
 
     @author Florian Dahlitz
 """
-def swap(list, a, b):
+def _swap(list, a, b):
     """swap
 
         Swaps two values of a given lists. Needs a pointer
@@ -18,7 +18,7 @@ def swap(list, a, b):
     list[b] = tmp
 
 
-def bubble_sort(data):
+def bubble_sort(data: list) -> list:
     """Bubble Sort
 
         This algorithm sorts by comparing neighboring values.
@@ -27,12 +27,12 @@ def bubble_sort(data):
     for j in range(0, len(data)):
         for i in range(0, len(data) - 1):
             if data[i] > data[i+1]:
-                swap(data, i, i+1)
+                _swap(data, i, i+1)
     
     return data
 
 
-def ripple_sort(data):
+def ripple_sort(data: list) -> list:
     """Ripple Sort
 
         Does the same like Bubble-Sort but vice versa.
@@ -40,12 +40,12 @@ def ripple_sort(data):
     for j in range(0, len(data) - 1):  
         for i in range(j + 1, len(data)):
             if data[j] > data[i]:
-                swap(data, j, i)
+                _swap(data, j, i)
 
     return data
 
 
-def min_sort(data):
+def min_sort(data: list) -> list:
     """Min Sort
 
         Efficient algorithm, 'cause after every run it
@@ -57,12 +57,12 @@ def min_sort(data):
         for i in range(j + 1, len(data)):
             if data[i] < data[value]:
                 value = i
-        swap(data, value, current_place)
+        _swap(data, value, current_place)
     
     return data
 
 
-def quick_sort(data, left, right):
+def quick_sort(data: list, left: int, right: int) -> list:
     """Quick Sort
 
         As the name mentions it's a very efficient and fast
@@ -80,7 +80,7 @@ def quick_sort(data, left, right):
             r -= 1
       
         if l <= r:
-            swap(data, l, r)
+            _swap(data, l, r)
             l += 1
             r -= 1
     
