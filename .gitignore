@@ -1,0 +1,9 @@
+# This file includes files and directories which will be
+# ignored by git
+# ######################################################
+
+# vscode-files
+.vscode/
+
+# git-files
+.git/
