@@ -45,6 +45,28 @@ def ripple_sort(data):
     return data
 
 
+def min_sort(data):
+    """Min Sort
+
+        Efficient algorithm, 'cause after every run it
+        has to compare one less.
+    """
+    for j in range(0, len(data)):
+        current_place = j
+        value = current_place
+        for i in range(j + 1, len(data)):
+            if data[i] < data[value]:
+                value = i
+        swap(data, value, current_place)
+    
+    return data
+
+
 class SortingAlgorithms:
+    """SortingAlgorithms-Class
+
+        Provides the sorting algorithms as static methods.
+    """
     bubble_sort = staticmethod(bubble_sort)
     ripple_sort = staticmethod(ripple_sort)
+    min_sort = staticmethod(min_sort)
