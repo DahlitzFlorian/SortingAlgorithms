@@ -6,4 +6,7 @@ written in Python.
 version 0.1
 
 ## Algorithms ## 
-Right now no algorithms included.
+* Bubble-Sort (slow)
+* Ripple-Sort (slow)
+* Min-Sort (better than previous ones)
+* Quick-Sort (very fast and efficient)
