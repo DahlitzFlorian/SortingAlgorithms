@@ -62,6 +62,37 @@ def min_sort(data):
     return data
 
 
+def quick_sort(data, left, right):
+    """Quick Sort
+
+        As the name mentions it's a very efficient and fast
+        sorting algorithm.
+    """
+    l = left
+    r = right
+    comparison = data[int((l + r) / 2)]
+    
+    while l <= r:
+        while data[l] < comparison:
+            l += 1
+        
+        while data[r] > comparison:
+            r -= 1
+      
+        if l <= r:
+            swap(data, l, r)
+            l += 1
+            r -= 1
+    
+    if left < r:
+        quick_sort(data, left, r)
+    
+    if l < right:
+        quick_sort(data, l, right)
+
+    return data
+
+
 class SortingAlgorithms:
     """SortingAlgorithms-Class
 
@@ -70,3 +101,4 @@ class SortingAlgorithms:
     bubble_sort = staticmethod(bubble_sort)
     ripple_sort = staticmethod(ripple_sort)
     min_sort = staticmethod(min_sort)
+    quick_sort = staticmethod(quick_sort)
