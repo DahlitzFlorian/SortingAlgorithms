@@ -3,7 +3,7 @@
 This project includes a various number or sorting algorithms
 written in Python.
 
-version 0.1
+version 1.0.0
 
 ## Algorithms ## 
 * Bubble-Sort (slow)
