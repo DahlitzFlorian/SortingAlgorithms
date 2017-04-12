@@ -6,5 +6,17 @@
 
     @author Florian Dahlitz
 """
+def swap(collection, a, b):
+    """swap
+
+        Swaps two values of a given collection. Needs a pointer
+        to the collection and the two positions of the
+        values to swap.
+    """
+    tmp = collection[a]
+    collection[a] = collection[b]
+    collection[b] = tmp
+
+
 class SortingAlgorithms:
     pass
