@@ -14,3 +14,9 @@ test.py
 # __pycache__
 */__pycache__/
 __pycache__/
+
+# files created while building wheel or needed for pypi
+.pypirc
+build/
+dist/
+sort_algorithms.egg-info/
