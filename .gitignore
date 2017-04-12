@@ -7,3 +7,6 @@
 
 # git-files
 .git/
+
+# test-files
+test.py
