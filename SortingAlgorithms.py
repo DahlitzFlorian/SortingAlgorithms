@@ -32,5 +32,19 @@ def bubble_sort(data):
     return data
 
 
+def ripple_sort(data):
+    """Ripple Sort
+
+        Does the same like Bubble-Sort but vice versa.
+    """
+    for j in range(0, len(data) - 1):  
+        for i in range(j + 1, len(data)):
+            if data[j] > data[i]:
+                swap(data, j, i)
+
+    return data
+
+
 class SortingAlgorithms:
     bubble_sort = staticmethod(bubble_sort)
+    ripple_sort = staticmethod(ripple_sort)
