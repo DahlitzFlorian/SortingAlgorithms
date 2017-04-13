@@ -2,10 +2,11 @@ from setuptools import setup
 
 setup(
     name='sort-algorithms',
-    version='1.0.0',
+    version='1.0.1',
     packages=['sort',],
     license='MIT',
-    long_description=open('README.md').read(),
+    description='Sorting algorithms written in and made for Python lists and tuples',
+    long_description=open('README.rst').read(),
     author='Florian Dahlitz',
     author_email='f2dahlitz@freenet.de',
     url='https://github.com/DahlitzFlorian/SortingAlgorithms',
