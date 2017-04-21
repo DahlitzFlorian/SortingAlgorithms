@@ -1,4 +1,5 @@
 # Sorting Algorithms #
+[![Build Status](https://travis-ci.org/DahlitzFlorian/SortingAlgorithms.svg?branch=master)](https://travis-ci.org/DahlitzFlorian/SortingAlgorithms)
 ## Description ##
 This project includes a various number or sorting algorithms
 written in Python.
