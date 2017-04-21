@@ -1,6 +1,5 @@
 # Sorting Algorithms #
 [![Build Status](https://travis-ci.org/DahlitzFlorian/SortingAlgorithms.svg?branch=master)](https://travis-ci.org/DahlitzFlorian/SortingAlgorithms)
-[![codecov](https://codecov.io/gh/DahlitzFlorian/SortingAlgorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/DahlitzFlorian/SortingAlgorithms)
 
 ## Description ##
 This project includes a various number or sorting algorithms
